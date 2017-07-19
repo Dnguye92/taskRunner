@@ -4,5 +4,4 @@ div.appendChild(button);
 div.style.height = '400px';
 console.log('added random js to uglify');
 console.log('Is gulp watching for changes?');
-var header = document.getElementById('sweetHeader');
-header.textContent = 'New header';
+

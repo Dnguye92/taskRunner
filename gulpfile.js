@@ -20,12 +20,18 @@ gulp.task('scripts', function() {
 	gulp.src(['app/js/**/*.js', '!app/js/**/*.min.js'])
 	.pipe(rename({suffix: '.min'}))
 	.pipe(uglify())
+	.pipe(reload({
+		stream: true
+	}))
 	.pipe(gulp.dest('app/js'));
 })
 
 // create html task
 gulp.task('html', function() {
-	gulp.src('app/**/*.html');
+	gulp.src('app/**/*.html')
+	.pipe(reload({
+		stream: true
+	}))
 });
 
 // create Sass tasks
@@ -37,6 +43,7 @@ gulp.task('sass', function() {
 	})
 	.on('error', sass.logError))
 	.pipe(autoprefixer('last 2 versions'))
+	.pipe(rename({suffix: '.min'}))
 	.pipe(gulp.dest('app/css'))
 	.pipe(reload({
 		stream: true
@@ -61,5 +68,5 @@ gulp.task('watch', function() {
 
 // create default task here
 // the name of the tasks that you've created will go inside of the array
-gulp.task('default', ['scripts', 'browser-sync', 'html' ,'watch']);
+gulp.task('default', ['scripts', 'html' ,'browser-sync', 'watch']);
 
