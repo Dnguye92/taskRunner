@@ -1,7 +1,8 @@
-var button = document.createElement('button');
-var div = document.createElement('div');
-div.appendChild(button);
-div.style.height = '400px';
-console.log('added random js to uglify');
-console.log('Is gulp watching for changes?');
+var CrNav = angular.module('CrNav', ['ngRoute']);
 
+CrNav.config(['$routeProvider', function($routeProvider) {
+	$routeProvider
+	.when('/', {
+		templateUrl: 'index.html'
+	})
+}])
