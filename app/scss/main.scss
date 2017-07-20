@@ -35,9 +35,16 @@ nav {
 				position: absolute;
 				padding-left: 0;
 				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+				text-align: left;
 				z-index: 1;
 				&:hover {
 					display: block;
+				}
+				li {
+					display: block;
+				}
+				h3 {
+					margin-left: 24px;
 				}
 			}
 		}

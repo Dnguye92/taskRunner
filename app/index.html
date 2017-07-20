@@ -2,7 +2,7 @@
 <html lang="en" ng-app="CrNav">
 <head>
 	<meta charset="UTF-8">
-	<title>Gulp Tuts</title>
+	<title>CR Angular Nav</title>
 	<link rel="icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.min.css">
@@ -14,6 +14,7 @@
 		<ul>
 			<li class="mainCat"><a href="#/">New</a>
 				<ul ng-controller="NewLinksCtrl" class="subCat">
+					<h3>{{dressLinkData[0].header}}</h3>
 					<li ng-repeat="links in newLinkData">{{links.section}}</li>
 				</ul>
 			</li>
@@ -22,7 +23,12 @@
 					<li ng-repeat="shoes in shoesLinkData">{{shoes.section}}</li>
 				</ul>
 			</li>
-			<li><a href="#/">Dresses</a></li>
+			<li class="mainCat"><a href="#/">Dresses</a>
+				<ul ng-controller="DressLinksCtrl" class="subCat">
+					<li ng-repeat="dress in dressLinkData">
+					{{dress.section}}</li>
+				</ul>
+			</li>
 			<li><a href="#/">Clothes</a></li>
 			<li><a href="#/">Plus Sizes</a></li>
 			<li><a href="#/">Accessories</a></li>
@@ -35,7 +41,7 @@
 <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
 <script type="text/javascript" src="../node_modules/angular-route/angular-route.min.js"></script>
-<script src="js/app.min.js"></script>
+<script src="js/app.js"></script>
 <script src="js/main.min.js"></script>
 </body>
 </html>
