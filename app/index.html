@@ -14,22 +14,29 @@
 		<ul>
 			<li class="mainCat"><a href="#/">New</a>
 				<ul ng-controller="NewLinksCtrl" class="subCat">
-					<h3>{{dressLinkData[0].header}}</h3>
-					<li ng-repeat="links in newLinkData">{{links.section}}</li>
+					<h3>New</h3>
+					<li ng-repeat="links in newLinkData"><a href="">{{links.section}}</a></li>
 				</ul>
 			</li>
 			<li class="mainCat"><a href="#/">Shoes</a>
 				<ul ng-controller="ShoesLinksCtrl" class="subCat">
-					<li ng-repeat="shoes in shoesLinkData">{{shoes.section}}</li>
+					<h3>Shoes</h3>
+					<li ng-repeat="shoes in shoesLinkData"><a href="">{{shoes.section}}</a></li>
 				</ul>
 			</li>
 			<li class="mainCat"><a href="#/">Dresses</a>
 				<ul ng-controller="DressLinksCtrl" class="subCat">
-					<li ng-repeat="dress in dressLinkData">
-					{{dress.section}}</li>
+					<h3>Dresses</h3>
+					<li ng-repeat="dress in dressLinkData"><a href="">
+					{{dress.section}}</a></li>
 				</ul>
 			</li>
-			<li><a href="#/">Clothes</a></li>
+			<li class="mainCat"><a href="#/">Clothes</a>
+				<ul ng-controller="ClothesLinksCtrl" class="subCat">
+					<h3>Clothes</h3>
+					<li ng-repeat="clothes in clothesLinkData"><a href="">{{clothes.section}}</a></li>
+				</ul>
+			</li>
 			<li><a href="#/">Plus Sizes</a></li>
 			<li><a href="#/">Accessories</a></li>
 			<li><a href="#/">Sale</a></li>

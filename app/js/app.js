@@ -28,3 +28,10 @@ CrNav.controller('DressLinksCtrl', ['$scope', '$http', function($scope, $http) {
 	})
 }])
 
+CrNav.controller('ClothesLinksCtrl', ['$scope', '$http', function($scope, $http) {
+	$http.get('./js/navLinks/clothesLinks.json').success(function(data) {
+		$scope.clothesLinkData = data;
+		console.log(data);
+	})
+}])
+

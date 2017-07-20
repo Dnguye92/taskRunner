@@ -4,7 +4,6 @@ body {
 	border: 0;
 }
 
-
 nav {
 	margin-top: 20px;
 	ul {
@@ -18,7 +17,7 @@ nav {
 				color: black;
 				text-transform: uppercase;
 				font-weight: 700;
-				letter-spacing: 1px;
+				// letter-spacing: 1px;
 				transition: 0.3s;
 				&:hover, &:focus {
 					color: #E21B70;
@@ -42,6 +41,16 @@ nav {
 				}
 				li {
 					display: block;
+					a {
+						text-decoration: none;
+						font-size: 12px;
+						font-weight: 400;
+						text-transform: none;
+						&:hover, &:focus {
+							text-decoration: none;
+							color: black;
+						}
+					}
 				}
 				h3 {
 					margin-left: 24px;
