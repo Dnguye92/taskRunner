@@ -9,12 +9,29 @@
 </head>
 <body>
 
-<h1 id="sweetHeader">Header</h1>
+<div class="container-fluid">
+	<nav>
+		<ul>
+			<li id="new"><a href="#/">New</a>
+				<ul ng-controller="NewLinksCtrl" class="subCat">
+					<li ng-repeat="links in newLinkData">{{links.section}}</li>
+				</ul>
+			</li>
+			<li><a href="#/">Shoes</a></li>
+			<li><a href="#/">Dresses</a></li>
+			<li><a href="#/">Clothes</a></li>
+			<li><a href="#/">Plus Sizes</a></li>
+			<li><a href="#/">Accessories</a></li>
+			<li><a href="#/">Sale</a></li>
+		</ul>
+	</nav>
+</div>
 
 <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
 <script type="text/javascript" src="../node_modules/angular-route/angular-route.min.js"></script>
 <script src="js/app.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 </html>

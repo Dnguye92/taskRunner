@@ -3,3 +3,27 @@ body {
 	padding: 0;
 	border: 0;
 }
+
+ul {
+	text-align: center;
+	li {
+		display: inline-block;
+		padding: 15px 25px;
+		a {
+			font-size: 20px;
+			text-decoration: none;
+			color: black;
+			text-transform: uppercase;
+			font-weight: 700;
+			letter-spacing: 1px;
+			transition: 0.3s;
+			&:hover, &:focus {
+				color: #E21B70;
+				text-decoration: none;
+			}
+		}
+	}
+	.subCat {
+		display: none;
+	}
+}

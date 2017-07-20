@@ -6,3 +6,11 @@ CrNav.config(['$routeProvider', function($routeProvider) {
 		templateUrl: 'index.html'
 	})
 }])
+
+CrNav.controller('NewLinksCtrl', ['$scope', '$http', function($scope, $http) {
+	$http.get('./js/navLinks/newLinks.json').success(function(data) {
+		$scope.newLinkData = data;
+		$scope.newLinkName = 'name';
+		console.log(data);
+	})
+}])
