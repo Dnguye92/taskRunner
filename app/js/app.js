@@ -10,7 +10,14 @@ CrNav.config(['$routeProvider', function($routeProvider) {
 CrNav.controller('NewLinksCtrl', ['$scope', '$http', function($scope, $http) {
 	$http.get('./js/navLinks/newLinks.json').success(function(data) {
 		$scope.newLinkData = data;
-		$scope.newLinkName = 'name';
 		console.log(data);
 	})
 }])
+
+CrNav.controller('ShoesLinksCtrl', ['$scope', '$http', function($scope, $http) {
+	$http.get('./js/navLinks/shoesLinks.json').success(function(data) {
+		$scope.shoesLinkData = data;
+		console.log(data);
+	})
+}])
+

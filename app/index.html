@@ -12,12 +12,16 @@
 <div class="container-fluid">
 	<nav>
 		<ul>
-			<li id="new"><a href="#/">New</a>
+			<li class="mainCat"><a href="#/">New</a>
 				<ul ng-controller="NewLinksCtrl" class="subCat">
 					<li ng-repeat="links in newLinkData">{{links.section}}</li>
 				</ul>
 			</li>
-			<li><a href="#/">Shoes</a></li>
+			<li class="mainCat"><a href="#/">Shoes</a>
+				<ul ng-controller="ShoesLinksCtrl" class="subCat">
+					<li ng-repeat="shoes in shoesLinkData">{{shoes.section}}</li>
+				</ul>
+			</li>
 			<li><a href="#/">Dresses</a></li>
 			<li><a href="#/">Clothes</a></li>
 			<li><a href="#/">Plus Sizes</a></li>
