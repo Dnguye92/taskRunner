@@ -4,45 +4,84 @@
 	<meta charset="UTF-8">
 	<title>CR Angular Nav</title>
 	<link rel="icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.min.css">
 </head>
 <body>
+	<div class="stickyNav container-fluid">
+		<div class="row text-center">
+			<div class="col-xs-4 leftPromo">
+				<p>Free Ship With Jeans Purchase. Shop Jeans</p>
+			</div>
+			<div class="col-xs-4 global">
+				<p>Up to 70% Off Clearance. Shop All Sale</p>
+			</div>
+			<div class="col-xs-4 account">
+				<p class="accountLink"><a href="#">Account</a></p>
+			</div>
+		</div>
+	</div>
 
-<div class="container-fluid">
-	<nav>
-		<ul>
-			<li class="mainCat"><a href="#/">New</a>
-				<ul ng-controller="NewLinksCtrl" class="subCat">
-					<h3>New</h3>
-					<li ng-repeat="links in newLinkData"><a href="">{{links.section}}</a></li>
-				</ul>
-			</li>
-			<li class="mainCat"><a href="#/">Shoes</a>
-				<ul ng-controller="ShoesLinksCtrl" class="subCat">
-					<h3>Shoes</h3>
-					<li ng-repeat="shoes in shoesLinkData"><a href="">{{shoes.section}}</a></li>
-				</ul>
-			</li>
-			<li class="mainCat"><a href="#/">Dresses</a>
-				<ul ng-controller="DressLinksCtrl" class="subCat">
-					<h3>Dresses</h3>
-					<li ng-repeat="dress in dressLinkData"><a href="">
-					{{dress.section}}</a></li>
-				</ul>
-			</li>
-			<li class="mainCat"><a href="#/">Clothes</a>
-				<ul ng-controller="ClothesLinksCtrl" class="subCat">
-					<h3>Clothes</h3>
-					<li ng-repeat="clothes in clothesLinkData"><a href="">{{clothes.section}}</a></li>
-				</ul>
-			</li>
-			<li><a href="#/">Plus Sizes</a></li>
-			<li><a href="#/">Accessories</a></li>
-			<li><a href="#/">Sale</a></li>
-		</ul>
-	</nav>
-</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-2">
+				<img src="img/nav-logo.png" class="navLogo">
+			</div>
+			<div class="col-xs-10">
+				<nav>
+					<ul>
+						<li class="mainCat"><a href="#/">New</a>
+							<ul ng-controller="NewLinksCtrl" class="subCat">
+								<h3>New</h3>
+								<li ng-repeat="links in newLinkData"><a href="">{{links.section}}</a></li>
+							</ul>
+						</li>
+						<li class="mainCat"><a href="#/">Shoes</a>
+							<ul ng-controller="ShoesLinksCtrl" class="subCat">
+								<h3>Shoes</h3>
+								<li ng-repeat="shoes in shoesLinkData"><a href="">{{shoes.section}}</a></li>
+							</ul>
+						</li>
+						<li class="mainCat"><a href="#/">Dresses</a>
+							<ul ng-controller="DressLinksCtrl" class="subCat">
+								<h3>Dresses</h3>
+								<li ng-repeat="dress in dressLinkData"><a href="">
+								{{dress.section}}</a></li>
+							</ul>
+						</li>
+						<li class="mainCat"><a href="#/">Clothes</a>
+							<ul ng-controller="ClothesLinksCtrl" class="subCat">
+								<h3>Clothes</h3>
+								<li ng-repeat="clothes in clothesLinkData"><a href="">{{clothes.section}}</a></li>
+							</ul>
+						</li>
+						<li class="mainCat"><a href="#/">Plus Sizes</a>
+							<ul ng-controller="PlusLinksCtrl" class="subCat">
+								<h3>Plus Sizes</h3>
+								<li ng-repeat="plus in plusLinksData"><a href="">{{plus.section}}</a></li>
+							</ul>
+						</li>
+						<li class="mainCat"><a href="#/">Accessories</a>
+							<ul ng-controller="AccLinksCtrl" class="subCat">
+								<h3>Accessories</h3>
+								<li ng-repeat="acc in accLinksData"><a href="">{{acc.section}}</a></li>
+							</ul>
+						</li>
+						<li class="mainCat"><a href="#/">Sale</a>
+							<ul ng-controller="SaleLinksCtrl" class="subCat">
+								<h3>Sale</h3>
+								<li ng-repeat="sale in saleLinksData"><a href="">{{sale.section}}</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div>
+		<img src="img/ss.jpg">
+	</div>
 
 <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

@@ -35,3 +35,25 @@ CrNav.controller('ClothesLinksCtrl', ['$scope', '$http', function($scope, $http)
 	})
 }])
 
+CrNav.controller('PlusLinksCtrl', ['$scope', '$http', function($scope, $http) {
+	$http.get('./js/navLinks/plusLinks.json').success(function(data) {
+		$scope.plusLinksData = data;
+		console.log(data);
+	})
+}])
+
+CrNav.controller('AccLinksCtrl', ['$scope', '$http', function($scope, $http) {
+	$http.get('./js/navLinks/accLinks.json').success(function(data) {
+		$scope.accLinksData = data;
+		console.log(data);
+	})
+}])
+
+CrNav.controller('SaleLinksCtrl', ['$scope', '$http', function($scope, $http) {
+	$http.get('./js/navLinks/saleLinks.json').success(function(data) {
+		$scope.saleLinksData = data;
+		console.log(data);
+	})
+}])
+
+
