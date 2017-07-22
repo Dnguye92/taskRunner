@@ -1,17 +1,22 @@
 [
 	{
-		"section": "New Shoes"
+		"section": "New Shoes",
+		"url": "http://www.charlotterusse.com/shoes/new-in-shoes"
 	},
 	{
-		"section": "Sandals"
+		"section": "Sandals",
+		"url": "http://www.charlotterusse.com/shoes/sandals"
 	},
 	{
-		"section": "Heels"
+		"section": "Heels",
+		"url": "http://www.charlotterusse.com/shoes/heels"
 	},
 	{
-		"section": "Boots & Booties"
+		"section": "Boots & Booties",
+		"url": "http://www.charlotterusse.com/shoes/boots-booties"
 	},
 	{
-		"section": "Flat & Sneakers"
+		"section": "Flat & Sneakers",
+		"url": "http://www.charlotterusse.com/shoes/flats-sneakers"
 	}
 ]

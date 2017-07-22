@@ -34,13 +34,13 @@
 						<li class="mainCat"><a href="#/">New</a>
 							<ul ng-controller="NewLinksCtrl" class="subCat">
 								<h3>New</h3>
-								<li ng-repeat="links in newLinkData"><a href="">{{links.section}}</a></li>
+								<li ng-repeat="links in newLinkData"><a ng-href="{{links.url}}">{{links.section}}</a></li>
 							</ul>
 						</li>
 						<li class="mainCat"><a href="#/">Shoes</a>
 							<ul ng-controller="ShoesLinksCtrl" class="subCat">
 								<h3>Shoes</h3>
-								<li ng-repeat="shoes in shoesLinkData"><a href="">{{shoes.section}}</a></li>
+								<li ng-repeat="shoes in shoesLinkData"><a ng-href="{{shoes.url}}">{{shoes.section}}</a></li>
 							</ul>
 						</li>
 						<li class="mainCat"><a href="#/">Dresses</a>

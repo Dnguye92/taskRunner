@@ -1,17 +1,22 @@
 [
 	{
-		"section": "Shoes"
+		"section": "Shoes",
+		"url": "http://www.charlotterusse.com/new/new-shoes"
 	},
 	{
-		"section": "Dresses"
+		"section": "Dresses",
+		"url": "http://www.charlotterusse.com/new/new-dresses"
 	},
 	{
-		"section": "Clothes"
+		"section": "Clothes",
+		"url": "http://www.charlotterusse.com/new/new-clothes"
 	},
 	{
-		"section": "Plus Sizes"
+		"section": "Plus Sizes",
+		"url": "http://www.charlotterusse.com/new/new-plus-sizes"
 	},
 	{
-		"section": "Accessories"
+		"section": "Accessories",
+		"url": "http://www.charlotterusse.com/new/new-accessories"
 	}
 ]
