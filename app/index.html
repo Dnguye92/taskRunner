@@ -40,13 +40,13 @@
 						<li class="mainCat"><a href="#/">Shoes</a>
 							<ul ng-controller="ShoesLinksCtrl" class="subCat">
 								<h3>Shoes</h3>
-								<li ng-repeat="shoes in shoesLinkData"><a ng-href="{{shoes.url}}">{{shoes.section}}</a></li>
+								<li ng-repeat="shoes in shoesLinkData"><a target="_blank" ng-href="{{shoes.url}}">{{shoes.section}}</a></li>
 							</ul>
 						</li>
 						<li class="mainCat"><a href="#/">Dresses</a>
 							<ul ng-controller="DressLinksCtrl" class="subCat">
 								<h3>Dresses</h3>
-								<li ng-repeat="dress in dressLinkData"><a href="">
+								<li ng-repeat="dress in dressLinkData"><a ng-href="{{dress.url}}">
 								{{dress.section}}</a></li>
 							</ul>
 						</li>
@@ -79,7 +79,8 @@
 			</div>
 		</div>
 	</div>
-	<div>
+
+	<div class="hero">
 		<img src="img/ss.jpg">
 	</div>
 

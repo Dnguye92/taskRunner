@@ -1,26 +1,34 @@
 [
 	{
-		"section": "New Dresses"
+		"section": "New Dresses",
+		"url": "http://www.charlotterusse.com/dresses/new-in-dresses"
 	},
 	{
-		"section": "Dresses starting at $15"
+		"section": "Dresses starting at $15",
+		"url": "http://www.charlotterusse.com/dresses/dresses-weekly-deals"
 	},
 	{
-		"section": "Party Dresses"
+		"section": "Party Dresses",
+		"url": "http://www.charlotterusse.com/dresses/party-dresses"
 	},
 	{
-		"section": "Casual Dresses"
+		"section": "Casual Dresses",
+		"url": "http://www.charlotterusse.com/dresses/casual-dresses"
 	},
 	{
-		"section": "Rompers & Jumpsuits"
+		"section": "Rompers & Jumpsuits",
+		"url": "http://www.charlotterusse.com/dresses/jumpsuits-rompers"
 	},
 	{
-		"section": "Bodycon Dresses"
+		"section": "Bodycon Dresses",
+		"url": "http://www.charlotterusse.com/dresses/bodycon-dresses"
 	},
 	{
-		"section": "Maxi Dresses"
+		"section": "Maxi Dresses",
+		"url": "http://www.charlotterusse.com/dresses/midi-maxi-dresses"
 	},
 	{
-		"section": "T-Shirt Dresses"
+		"section": "T-Shirt Dresses",
+		"url": "http://www.charlotterusse.com/dresses/knit-dresses"
 	}
 ]
