@@ -86,14 +86,14 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="col-xs-12 text-center">
 				<h1>Parse HTML below</h1>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-xs-12">
-				<input class="form-control" id="input0" placeholder="Type Subcategory Here">
+				<!-- <input class="form-control" id="input0" placeholder="Type Subcategory Here">
 				<input class="form-control" id="urlValue0" placeholder="Type URL Here">
 				<input class="form-control" id="input1" placeholder="Type Subcategory Here">
 				<input class="form-control" id="urlValue1" placeholder="Type URL Here">
@@ -103,7 +103,12 @@
 				<input class="form-control" id="urlValue3" placeholder="Type URL Here">
 				<input class="form-control" id="input4" placeholder="Type Subcategory Here">
 				<input class="form-control" id="urlValue4" placeholder="Type URL Here">
-				<button id="button" type="button" class="btn btn-default">Convert</button>
+				<button id="button" type="button" class="btn btn-default">Convert</button> -->
+				<div class="form-group">
+					<label>How many subcategories would you like to create?</label>
+					<input type="text" id="listAmount" placeholder="How many subcategories?" class="form-control">
+					<button type="button" class="btn btn-default" id="generateBtn">Generate</button>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -111,9 +116,6 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<ul id="categories">
-					
-				</ul>
 				<div id="results">
 
 				</div>

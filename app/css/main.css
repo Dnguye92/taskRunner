@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Fira Sans', sans-serif; }
+
+.navLogo {
+  position: relative;
+  top: 12px; }
+
+.hero {
+  border-top: 1px solid black; }
+
+nav {
+  margin-top: 20px;
+  margin-right: 13%; }
+  nav ul {
+    text-align: center; }
+    nav ul li {
+      display: inline-block;
+      padding: 15px 25px; }
+      nav ul li a {
+        font-size: 12px;
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-weight: 700;
+        transition: 0.3s; }
+        nav ul li a:hover, nav ul li a:focus {
+          color: #E21B70;
+          text-decoration: none; }
+    nav ul .mainCat:hover .subCat {
+      display: block; }
+    nav ul .mainCat .subCat {
+      display: none;
+      position: absolute;
+      padding-left: 0;
+      background-color: white;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      text-align: left;
+      z-index: 1; }
+      nav ul .mainCat .subCat:hover {
+        display: block; }
+      nav ul .mainCat .subCat li {
+        display: block; }
+        nav ul .mainCat .subCat li:hover {
+          background-color: lightgrey; }
+        nav ul .mainCat .subCat li a {
+          text-decoration: none;
+          font-size: 12px;
+          font-weight: 400;
+          text-transform: none;
+          cursor: auto; }
+          nav ul .mainCat .subCat li a:hover, nav ul .mainCat .subCat li a:focus {
+            text-decoration: none;
+            color: black; }
+      nav ul .mainCat .subCat h3 {
+        margin-left: 24px; }
+
+div img {
+  width: 100%; }
+
+.stickyNav {
+  margin-top: 10px;
+  border-bottom: 1px solid black;
+  font-family: 'Fira Sans', sans-serif; }
+  .stickyNav .leftPromo p {
+    font-style: italic; }
+  .stickyNav .global p {
+    color: red;
+    font-weight: 700; }
+  .stickyNav .account .accountLink a {
+    color: black; }
+
+#listAmount {
+  width: 30%;
+  margin: 10px 0; }
+
+input {
+  margin: 15px 0; }
+
+/*# sourceMappingURL=main.css.map */
