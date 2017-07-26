@@ -1,28 +1,6 @@
-// var	button = document.getElementById('button'),
-// 	results = document.getElementById('results');
-
-// button.addEventListener('click', function() {
-// 	// console.log(input.value + ' ' + url.value)
-// 	var li = document.createElement('li');
-// 	var a = document.createElement('a');
-// 	console.log(ul);
-
-// 	// for(var i = 0; i < 5; i++) {
-// 	// 	var input = document.getElementById('input' + [i]);
-// 	// 	var link = document.getElementById('urlValue' + [i]);
-// 	// 	var br = document.createElement('br');
-// 	// 	var h1 = document.createElement('h1');
-// 	// 	var parsed;
-// 	// 	parsed = '<li>' + '<a href="' + link.value + '>' + input.value + '</a>' + '</li>';
-// 	// 	h1.textContent = parsed;
-
-// 	// 	results.appendChild(h1);
-	
-// 	// }
-// 	// results.textContent = '<a href="' + url.value + '>' + input.value + '</a>';
-// })
-
 var results = document.getElementById('results');
+var inputArea = document.getElementById('inputArea');
+var listCategories = document.getElementById('listCategories');
 var listAmount = document.getElementById('listAmount');
 var generateBtn = document.getElementById('generateBtn');
 
@@ -32,6 +10,7 @@ generateBtn.addEventListener('click', function() {
 	var subCatNameArr = [];
 	var subCatURLArr = [];
 
+	generateBtn.setAttribute('disabled', 'true');
 	parseBtn.className = 'btn btn-primary';
 	parseBtn.textContent = 'Parse HTML';
 
@@ -42,35 +21,61 @@ generateBtn.addEventListener('click', function() {
 		var subCatURL = document.createElement('input');
 		var catNum = document.createElement('h2');
 
-		catNum.textContent = i + 1;
+		catNum.textContent = 'Category ' + (i + 1);
 
 
-		subCatName.className = 'subCatName form-control';
+		subCatName.className = 'subCatName' + [i] + ' form-control';
 		subCatName.setAttribute('placeholder', 'Enter Category Name');
 
-		subCatURL.className = 'subCatURL form-control';
+		subCatURL.className = 'subCatURL' + [i] + ' form-control';
 		subCatURL.setAttribute('placeholder', 'Enter URL');
 
-		results.appendChild(catNum);
-		results.appendChild(subCatName);
-		results.appendChild(subCatURL);
+		subCatNameArr.push(subCatName);
+		subCatURLArr.push(subCatURL);
 
-		console.log(subCatName);
-		console.log(subCatURL);
+		listCategories.appendChild(catNum);
+		listCategories.appendChild(subCatName);
+		listCategories.appendChild(subCatURL);
 
 	}
+	listAmount.value = '';
+	console.log(subCatNameArr);
+	console.log(subCatURLArr);
 
-	results.appendChild(parseBtn);
+	inputArea.appendChild(parseBtn);
 
 	parseBtn.addEventListener('click', function() {
-		console.log('This second function works!');
-		console.log(document.getElementsByClassName('subCatName'))
-		for(var i = 0; i < totalListAmount; i++) {
-			
-		}
+		var parsedData;
+		var start = document.createElement('h2');
+		start.textContent = '<ul>'
+		var end = document.createElement('h2');
+		end.textContent = '</ul>'
 
+		console.log(subCatURLArr.value)
+
+		results.appendChild(start);
+
+		for(var i = 0; i < totalListAmount; i++) {
+			if(subCatURLArr[i].value === '' || subCatNameArr[i].value === '') {
+				alert('You forgot to enter data at Sub-category ' + (i + 1));
+			} else {
+				parsedData = '<li><a href="' + subCatURLArr[i].value + '">' + subCatNameArr[i].value + '</a></li>';
+
+				var plainHTML = document.createElement('h2');
+				plainHTML.textContent = parsedData;
+				results.appendChild(plainHTML);
+
+				console.log('Value of subCatName at ' + [i] + ' index: ' + subCatNameArr[i].value);
+				console.log('Value of subCatURL at ' + [i] + ' index: ' + subCatURLArr[i].value)
+
+				console.log(subCatNameArr[i].value);
+				console.log(subCatURLArr[i].value);
+			}
+		}
+		results.appendChild(end);
 	})
 })
+
 
 
 
